@@ -1,0 +1,27 @@
+% !TEX program = lualatex
+% =============================================================================
+%  Бланк листа юридичної особи для друку (ДСТУ 4163:2020, п. 6.8–6.9)
+%  form = true: порожні date / index / ref-* друкуються як лінії для
+%  заповнення від руки (без form порожні реквізити просто зникають).
+%  blank = corner — кутовий; blank = long — поздовжній.
+% =============================================================================
+\documentclass[14pt]{dstu4163}
+
+\dstusetup{
+  blank      = corner,
+  align      = center,
+  form       = true,
+  % emblem   = {\includegraphics[height=17mm]{logo}},  % 02 (≤ 17 мм)
+  % arms     = {\includegraphics[height=17mm]{gerb}},  % 01 (лише органи влади)
+  parent     = {Умовна юридична особа вищого рівня},
+  name       = {Підприємство «Зразок»},
+  short-name = {(П «Зразок»)},
+  address    = {вул. Зразкова, 1,\\ м. Умовне, 00000},
+  phone      = {(044) 000-00-00},
+  email      = {info@zrazok.example},
+  code       = {00000000},
+}
+
+\begin{document}
+\makeletterhead
+\end{document}

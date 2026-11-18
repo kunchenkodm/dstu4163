@@ -1,0 +1,18 @@
+# LaTeX build artefacts
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+# Packaging
+/build/
+/dstu4163.zip
+# macOS
+.DS_Store

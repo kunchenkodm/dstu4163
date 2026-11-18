@@ -1,0 +1,6 @@
+# Клас dstu4163.cls лежить на рівень вище
+ensure_path('TEXINPUTS', '../');
+$pdf_mode = 4;   # LuaLaTeX; для XeLaTeX: latexmk -xelatex
+$lualatex = 'lualatex -interaction=nonstopmode -synctex=1 %O %S';
+$xelatex  = 'xelatex -interaction=nonstopmode -synctex=1 %O %S';
+$clean_ext = 'synctex.gz';
